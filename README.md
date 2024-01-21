@@ -3,7 +3,6 @@
 
 ## Environment :
 
-Pacman
 This environment is part of the [Atari environments](https://gymnasium.farama.org/environments/atari/). Please read that page first for general information.
 | Action Space | ``` Discrete(14) ``` |
 | :---   | :--- | 
@@ -44,3 +43,10 @@ KungFuMaster has different variants of the environment id which have differences
 | Env-id | obs_type= | frameskip= | repeat_action_probability= |
 | :---   | :--- | :--- | :--- | 
 | KungFuMasterDeterministic-v0 | ```"rgb"``` | ```4``` | ```0.25``` |
+
+## Version History
+A thorough discussion of the intricate differences between the versions and configurations can be found in the general article on Atari environments.
+
+* v5: Stickiness was added back and stochastic frameskipping was removed. The environments are now in the “ALE” namespace.
+* v4: Stickiness of actions was removed
+* v0: Initial versions release
