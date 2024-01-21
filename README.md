@@ -25,3 +25,22 @@ KungFuMaster has the action space of ```Discrete(5)``` with the table below list
 |```6```|```DOWNLEFT```|```7```|```RIGHTFIRE```|```8```|```LEFTFIRE```|
 |```9```|```DOWNFIRE```|```10```|```UPRIGHTFIRE```|```11```|```UPLEFTFIRE```|
 |```12```|```DOWNRIGHTFIRE```|```13```|```DOWNLEFTFIRE```|
+
+## Observations
+
+Atari environments have three possible observation types: ```"rgb"```, ```"grayscale"``` and ```"ram"```.
+
+* ```obs_type="rgb" -> observation_space=Box(0, 255, (210, 160, 3), np.uint8)```
+
+* ```obs_type="ram" -> observation_space=Box(0, 255, (128,), np.uint8)```
+
+* ```obs_type="grayscale" -> Box(0, 255, (210, 160), np.uint8)```, a grayscale version of the “rgb” type
+
+See variants section for the type of observation used by each environment id by default.
+
+## Variant
+KungFuMaster has different variants of the environment id which have differences in observation, the number of frame-skips and the repeat action probability. The variant used :
+
+| Env-id | obs_type= | frameskip= | repeat_action_probability= |
+| :---   | :--- | :--- | :--- | 
+| KungFuMasterDeterministic-v0 | ```"rgb"``` | ```4``` | ```0.25``` |
