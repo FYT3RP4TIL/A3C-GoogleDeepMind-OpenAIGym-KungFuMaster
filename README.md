@@ -46,7 +46,13 @@ KungFuMaster has different variants of the environment id which have differences
 
 ## Version History
 A thorough discussion of the intricate differences between the versions and configurations can be found in the general article on Atari environments.
+ * v5: Stickiness was added back and stochastic frameskipping was removed. The environments are now in the “ALE” namespace.
+ * v4: Stickiness of actions was removed
+ * v0: Initial versions release
 
-* v5: Stickiness was added back and stochastic frameskipping was removed. The environments are now in the “ALE” namespace.
-* v4: Stickiness of actions was removed
-* v0: Initial versions release
+<p align="center">
+  <img src="https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/ee470725-111b-4cb4-b745-e81465cfa62e"/>
+</p>
+
+## A3C ( Asynchronous Advantage Actor Critic )
+
