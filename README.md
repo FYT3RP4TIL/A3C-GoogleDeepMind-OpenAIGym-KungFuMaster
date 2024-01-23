@@ -51,8 +51,22 @@ A thorough discussion of the intricate differences between the versions and conf
  * v0: Initial versions release
 
 <p align="center">
-  <img src="https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/ee470725-111b-4cb4-b745-e81465cfa62e"/>
+  <img src="https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/3732af5d-2792-42e0-97b5-9bc08ab47556"/>
 </p>
 
 ## A3C ( Asynchronous Advantage Actor Critic ) with LSTM
+### Prerequisites : In-Depth Knowledge of  CNN, Q-Learning and  Deep-Q-Learning.
 
+### Actor - Critic
+Actor-Critic combines the benefits of both approaches Q-learning, or policy-iteration methods such as Policy Gradient. In the case of A3C, our network will estimate both a value function V(s) (how good a certain state is to be in) and a policy π(s) (The Q values) (a set of action probability outputs). These will each be separate fully-connected layers sitting at the top of the network. Critically, the agent uses the value estimate (the critic) to update the policy (the actor) more intelligently than traditional policy gradient methods.
+* The “Critic” estimates the value function. This could be the action-value (the Q value) or state-value (the V value).
+* The “Actor” updates the policy distribution in the direction suggested by the Critic (such as with policy gradients).
+
+Working : The actor decided which action should be taken and critic inform the actor how good was the action and how it should adjust. The learning of the actor is based on policy gradient approach. In comparison, critics evaluate the action produced by the actor by computing the value function.
+
+![Screenshot 2024-01-23 185105](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/7fed6dbd-c576-4df7-b9ff-420ca55cd44c)
+
+### Asynchronous
+### Advantage
+### LSTM
+### Comparision - Performance of A3C LSTM
