@@ -70,3 +70,14 @@ Working : The actor decided which action should be taken and critic inform the a
 ### Advantage
 ### LSTM
 ### Comparision - Performance of A3C LSTM
+
+![Screenshot 2024-01-23 190318](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/1c8e371e-1878-45e9-866f-6968abc218c8)
+
+Mean and median human-normalized scores on 57 Atari games using the human starts evaluation metric.
+
+
+![Screenshot 2024-01-23 190831](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/0acc07d2-aaaf-429f-9552-5374586681cd)
+
+Training speed comparison of different numbers of actor-learners on five Atari games. The x-axis shows training time in
+hours while the y-axis shows the average score. Each curve shows the average over the three best learning rates. All asynchronous methods show significant speedups from using greater numbers of parallel actor-learners.
+
