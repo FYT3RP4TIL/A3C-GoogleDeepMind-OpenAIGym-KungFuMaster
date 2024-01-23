@@ -64,6 +64,7 @@ Actor-Critic combines the benefits of both approaches Q-learning, or policy-iter
 
 Working : The actor decided which action should be taken and critic inform the actor how good was the action and how it should adjust. The learning of the actor is based on policy gradient approach. In comparison, critics evaluate the action produced by the actor by computing the value function.
 
+
 ![Screenshot 2024-01-23 185105](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/7fed6dbd-c576-4df7-b9ff-420ca55cd44c)
 
 ### Asynchronous
@@ -100,4 +101,20 @@ Mean and median human-normalized scores on 57 Atari games using the human starts
 
 Training speed comparison of different numbers of actor-learners on five Atari games. The x-axis shows training time in
 hours while the y-axis shows the average score. Each curve shows the average over the three best learning rates. All asynchronous methods show significant speedups from using greater numbers of parallel actor-learners.
+
+## AI Beating Human Scores :
+
+https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/d5be3058-94c0-4190-ac49-dfaa9a96c67a
+
+## References :
+
+* https://arxiv.org/pdf/1602.01783.pdf
+* https://deepmind.google/discover/blog/deep-reinforcement-learning/
+* https://jaromiru.com/2017/03/26/lets-make-an-a3c-implementation/
+* https://arxiv.org/pdf/1506.02438.pdf
+* https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2
+* https://colah.github.io/
+
+
+
 
