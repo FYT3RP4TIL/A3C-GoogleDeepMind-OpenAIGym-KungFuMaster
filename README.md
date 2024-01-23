@@ -67,6 +67,10 @@ Working : The actor decided which action should be taken and critic inform the a
 ![Screenshot 2024-01-23 185105](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/7fed6dbd-c576-4df7-b9ff-420ca55cd44c)
 
 ### Asynchronous
+Asynchronous stands for the principal difference of this algorithm from DQN, where a single neural network interacts with a single environment. On the contrary, in this case, we’ve got a global network with multiple agents having their own set of parameters. It creates every agent’s situation interacting with its environment and harvesting the different and unique learning experience for overall training. That also deals partially with RL sample correlation, a big problem for neural networks, which are optimized under the assumption that input samples are independent of each other.
+
+![Screenshot 2024-01-23 220751](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/14e07a99-46a2-4b77-b8cb-7fa248193e7e)
+
 ### Advantage
 ### LSTM
 ### Comparision - Performance of A3C LSTM
