@@ -74,7 +74,21 @@ Asynchronous stands for the principal difference of this algorithm from DQN, whe
 Note : In this project we have used 10 agents who will explore the environment from different starting points and who are sharing the same Critic so they can compare the rewards they are getting and the actions they will choose to maximize the reward updating the Neural Network 
 
 ### Advantage
+The update rule used the discounted returns from a set of experiences in order to tell the agent which of its actions were “good” and which were “bad.” The network is then updated in order to encourage and discourage actions appropriately.
+* Discounted Reward: R = γ(r) : The insight of using advantage estimates rather than just discounted returns is to allow the agent to determine not just how good its actions were, but how much better they turned out to be than expected. Intuitively, this allows the algorithm to focus on where the network’s predictions were lacking.
+* Advantage: A = Q(s,a) - V(s) : Since we won’t be determining the Q values directly in A3C, we can use the discounted returns (R) as an estimate of Q(s,a) to allow us to generate an estimate of the advantage.
+
+The advantage helps in calculating if the agent is taking the best possible action compared to all the agents performing in the same environment. 
 ### LSTM
+
+* Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. 
+* LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
+* All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer.
+* LSTMs also have this chain like structure, but the repeating module has a different structure. Instead of having a single neural network layer, there are four, interacting in a very special way. 
+
+![Screenshot 2024-01-23 233601](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/87d3307b-0a9b-4643-bbfb-d8812b878cb1)
+
+
 ### Comparision - Performance of A3C LSTM 
 
 ![Screenshot 2024-01-23 190318](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/1c8e371e-1878-45e9-866f-6968abc218c8)
