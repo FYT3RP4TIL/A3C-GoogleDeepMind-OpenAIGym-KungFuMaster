@@ -71,9 +71,11 @@ Asynchronous stands for the principal difference of this algorithm from DQN, whe
 
 ![Screenshot 2024-01-23 220751](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/14e07a99-46a2-4b77-b8cb-7fa248193e7e)
 
+Note : In this project we have used 10 agents who will explore the environment from different starting points and who are sharing the same Critic so they can compare the rewards they are getting and the actions they will choose to maximize the reward updating the Neural Network 
+
 ### Advantage
 ### LSTM
-### Comparision - Performance of A3C LSTM
+### Comparision - Performance of A3C LSTM 
 
 ![Screenshot 2024-01-23 190318](https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/1c8e371e-1878-45e9-866f-6968abc218c8)
 
