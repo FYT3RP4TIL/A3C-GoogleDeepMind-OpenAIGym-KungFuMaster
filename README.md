@@ -54,5 +54,5 @@ A thorough discussion of the intricate differences between the versions and conf
   <img src="https://github.com/FYT3RP4TIL/A3C-GoogleDeepMind-OpenAIGym-KungFuMaster/assets/113416452/ee470725-111b-4cb4-b745-e81465cfa62e"/>
 </p>
 
-## A3C ( Asynchronous Advantage Actor Critic )
+## A3C ( Asynchronous Advantage Actor Critic ) with LSTM
 
